@@ -282,6 +282,10 @@ main {
 }
 
 .clients-companies {
+  width: calc((100% - 60px) / 6);
+}
+
+.clients-companies-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +293,6 @@ main {
   height: 90px;
   border: 1px solid var(--clients);
   border-radius: 4px;
-  width: calc((100% - 60px) / 6);
 }
 
 .clients-companies:not(:last-child) {
@@ -300,12 +303,12 @@ main {
   fill: var(--clients);
 }
 
-.clients-companies:hover,
-.clients-companies:focus {
+.clients-companies-link:hover,
+.clients-companies-link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-companies:hover .clients-companies-logo,
-.clients-companies:focus .clients-companies-logo {
+.clients-companies-link:hover .clients-companies-logo,
+.clients-companies-link:focus .clients-companies-logo {
   fill: var(--accent-color);
 }
